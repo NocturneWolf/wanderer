@@ -1,0 +1,19 @@
+#sidebar {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 73%;
+  background-color: #A49D8F;
+  opacity: 0.6;
+}
+
+.sidebarblock {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+  width: 80%;
+  font-size: 100%;
+  background-color: #C6C6C6;
+}

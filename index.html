@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="wandererApp">
+    <head>
+        <title>Wanderer Engine</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="resources/frameworks/angular.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript" src="resources/javascript/game.js"></script>
+        <link type="text/css" rel="stylesheet" href="resources/css/style.css" />
+        <link type="text/css" rel="stylesheet" href="resources/css/main.css" />
+    </head>
+    <body ng-controller="wandererController">
+        <div id="header">
+            <img src="resources/assets/wanderer.png" alt="Wanderer Engine logo" />
+            <h1><b>Title:</b> {{gametitle}}</h1>
+        </div>
+        <div id="sidebar">
+            <div class="sidebarblock">
+                <ul>
+                    <li><b>Name:</b> {{pc.name}}</li>
+                    <li><b>Gender:</b> {{pc.gender}}</li>
+                    <li><b>Species:</b> {{pc.species}}</li>
+                    <li><b>Health:</b> {{pc.health}}</li>
+                    <li><b>Score:</b> {{pc.score}}</li>
+                </ul>
+            </div>
+            <div class="sidebarblock">
+                Some information about player statuses or whatnot should go here!
+            </div>
+            <div class="sidebarblock">
+                <h2><b>Location:</b></h2>
+                <br>
+                <p>Location information will go here next!</p>
+            </div>
+        </div>
+        <div id="responsewindow">
+            <div ng-repeat="response in responses" class="response playerResponse-{{response.byPlayer}}">
+                {{response.text}}
+            </div>
+        </div>
+        <div id="interactionbar">
+            <div id="playerresponse">
+                <input type="text" ng-model="responseText" placeholder="Enter something to say.">
+                <input type="submit" ng-click="addPlayerResponse()" value="Say">
+            </div>
+        </div>
+    </body>
+</html>

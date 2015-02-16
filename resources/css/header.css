@@ -1,0 +1,23 @@
+#header {
+  position: relative;
+  width: 100%;
+  height: 7%;
+  background-color: #7D614C;
+  opacity: 0.6;
+}
+
+#header img {
+  position: absolute;
+  top: 10%;
+  margin-left: 1%;
+  height: 75%;
+  max-width: 25%;
+}
+
+#header h1 {
+  position: absolute;
+  top: 15%;
+  left: 26.25%;
+  font-size: 200%;
+  font-style: italic;
+}

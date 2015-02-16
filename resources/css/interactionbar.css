@@ -1,0 +1,22 @@
+#interactionbar {
+  clear: both;
+  width: 100%;
+  height: 20%;
+  background-color: #7D614C;
+  opacity: 0.6;
+}
+
+#playerresponse {
+  float: right;
+  padding: 1.25%;
+  width: 72.5%;
+}
+
+#playerresponse input[type="text"] {
+  width: 90%;
+}
+
+#playerresponse input[type="submit"] {
+  float: right;
+  width: 8%;
+}

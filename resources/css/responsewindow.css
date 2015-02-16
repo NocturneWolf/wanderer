@@ -1,0 +1,23 @@
+#responsewindow {
+  float: right;
+  width: 75%;
+  height: 73%;
+  overflow-y: scroll;
+  background-color: #DBD8D2;
+  opacity: 0.6;
+}
+
+.response {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.66%;
+  margin-bottom: 1.66%;
+  padding: 1.66%;
+  width: 93.36%;
+  font-size: 100%;
+  background-color: #C6C6C6;
+}
+
+.playerResponse-true {
+  background-color: #A8A8A8;
+}
